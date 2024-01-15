@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.44, rgb(122, 153, 217)),
+      color-stop(0.72, rgb(73, 125, 189)),
+      color-stop(0.86, rgb(28, 58, 148))
+    );
+  }
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(21, 22, 43, 0.878),
+      #1a1d4482
+    ),
+    url(images/Virtual-Classroom_Lobby.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.main_text {
+  color: white;
+  padding-top: 100px;
+}
+.main_text h4 {
+  font-weight: 400;
+}
+.main_text p {
+  font-weight: 300;
+  width: 70%;
+  text-align: justify;
+}
+.main_text h3 {
+  width: 70%;
+  font-weight: 780;
+  font-size: 5rem;
+}
+.card {
+  margin-left: 40%;
+  margin-top: -5%;
+  width: 500px;
+}
+.btn-group {
+  width: 330px;
+  height: 50px;
+}
+.about_us img {
+  border-radius: 40px 40px 200px;
+  box-shadow: 0px 0px 10px 0.1px;
+}
+.about_us .text {
+  margin-left: 50%;
+  margin-top: -33%;
+}
+
+.choose-us-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 76, 255, 0.964),
+      #1472ff60
+    ),
+    url(images/choose\ us.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: auto;
+  height: 80vh;
+}
+
+.card3 {
+  background: linear-gradient(rgba(222, 222, 255, 0.264), rgb(0, 30, 164)),
+    url(images/blogImage2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card1 {
+  background: linear-gradient(rgba(222, 222, 255, 0.016), rgb(0, 30, 164)),
+    url(images/blogImage1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card2 {
+  background: linear-gradient(rgba(222, 222, 255, 0.042), rgb(0, 30, 164)),
+    url(images/blogImage3);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.client-container h4 {
+  color: rgb(0, 94, 255);
+  font-size: 2rem;
+}
+.client-container h2 {
+  font-weight: 800;
+  font-size: 3rem;
+  color: black;
+}
+.client-container h1 {
+  color: rgb(0, 60, 255);
+  opacity: 0.4;
+  font-size: 6rem;
+}
+.client-container p{
+ font-weight: 500;
+ width: 55%;
+ margin-left: 23%;
+}
+.testimonial-text h3{
+  color: black;
+  font-weight: 750;
+}
+.testimonial-text p{
+  color: rgb(27, 27, 27);
+  font-size: 0.9rem;
+  line-height: 0.5rem;
+  margin-left: 22.5%;
+}
+.footer{
+  background-color: rgb(0, 47, 141);
+  width: 100.8vw;
+  margin-top: 10rem;
+  color: white;
+}
+.about{
+  padding-top: 5rem;
+  margin-left: 5rem;
+}
+.about h2{
+  font-weight: 600;
+  margin-left: 1rem;
+  font-size: 1.9rem;
+  line-height: 3rem;
+}
+.about p{
+  font-size: 0.8rem;
+  width: 70%;
+  font-weight: 450;
+  color: rgb(213, 213, 213);
+}
+.about i{
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-right: 1rem;
+}
+
+.useful h5 a{
+  color: white;
+  text-decoration: none;
+  font-weight: 450;
+  font-size: 0.9rem;
+}
+
+.useful h2{
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 3rem;
+}
+.useful i{
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+.useful{
+  padding-top: 5rem;
+  margin-left: 5rem;
+}
+
+.subscribe h5 a{
+  color: white;
+  text-decoration: none;
+  font-weight: 450;
+  font-size: 0.9rem;
+}
+
+.subscribe h2{
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 2.5rem;
+  width: 30rem;
+}
+.subscribe i{
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+.subscribe{
+  padding-top: 5rem;
+  margin-left: 5rem;
+}
+.subscribe input{
+  border-radius: 0;
+  margin-top: 5%;
+  width: 15rem;
+}
+.subscribe ::placeholder{
+  color: rgba(60, 60, 60, 0.523);
+}
+.subscribe i{
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+.subscribe i:hover{
+  cursor: pointer;
+}
+.copyright {
+  color: white;
+  background-color: rgb(0, 15, 57);
+  height: 3rem;
+}
+.copyright h2{
+  font-size: 1rem;
+  font-weight: 300;
+  padding-top: 1rem;
+
+}
+
+#back-to-top{
+  position: fixed;
+  z-index: 999;
+  bottom: 10px;
+  right: 10px;
+}

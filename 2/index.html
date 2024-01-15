@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Your Website</title>
+</head>
+
+<body>
+  <!--Background Image Here-->
+  <div class="background img-fluid">
+    <div class="container-fluid"> <a id="back-to-top" href="#" class="btn btn-primary back-to-top" role="button"
+        aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
+    <!--NavBar Start Here-->
+    <nav class="navbar navbar-expand-lg bg-transparent mt-auto">
+      <div class="container">
+        <a class="navbar-brand" style="color: white;" href="#"><img
+            src="images/526-5267145_graphic-design-hd-png-download-removebg-preview.png" width="80px" alt=""></a>
+        <button class="navbar-toggler" style="background-color: white;" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-underline ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-4">
+              <a class="nav-link active fw-normal" style="color: white;" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link " style="color: white;" aria-current="page" href="#">About Us</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link " style="color: white;" aria-current="page" href="#">Training</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link " style="color: white;" aria-current="page" href="#">Consulting</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link " style="color: white;" aria-current="page" href="#">Recruitment</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link " style="color: white;" aria-current="page" href="#">Contact Us</a>
+            </li>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-lg inquire"
+              style="background-color: rgb(46, 46, 255); border-radius: 0; color: white; border: none;width: 180px;"
+              data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-regular fa-user" style="color: #ffffff;margin-right: 10%;"></i>Sign Up
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up For Free</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--Form Starts Here-->
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                          placeholder="Apartment, studio, or floor">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            I have read the terms and conditions.
+                          </label>
+                        </div>
+                      </div>
+                    </form>
+                    <!--Form Ends Here-->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!--NavBar End Here-->
+    <!--Main Body Text Starts Here-->
+    <div class="container d-flex flex-column mt-5 main_text">
+      <h4 class="">Welcome To</h4>
+      <h3>ResMode Tec</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet maiores, culpa deserunt non consectetur
+        cupiditate nam architecto eaque iste esse assumenda numquam explicabo beatae iusto quae. Molestiae soluta vitae
+        blanditiis!</p>
+    </div>
+    <div class="container">
+      <!--Group Buttons In Main-->
+      <div class="btn-group" role="group" aria-label="Basic example"
+        style=" border: 5px solid; border-color: rgb(0, 67, 148); border-radius: 0; margin-top: 15px;">
+        <button type="button" class="btn btn-primary"
+          style="background-color: rgb(46, 46, 255); border-radius: 0; color: #f2f2f2; border: none;width: 180px;">Inquire
+          Us</button>
+        <button type="button" class="btn btn-primary"
+          style="background-color: rgb(20, 20, 20); border-radius: 0; color: white; border: none;width: 180px;">Contact
+          Us</button>
+      </div>
+
+    </div>
+    <!--customer card-->
+    <div class="container" style="padding: 0; margin: 0;">
+      <div class="card" style="height: 6rem;">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa-solid fa-star" style="color: #ffae00;"></i><i class="fa-solid fa-star"
+              style="color: #ffae00;"></i><i class="fa-solid fa-star" style="color: #ffae00;"></i><i
+              class="fa-solid fa-star" style="color: #ffae00;"></i><i class="fa-regular fa-star"
+              style="color: #ffae00;"></i></h5>
+          <p class="card-text">Customer Reviews</p>
+          <div class="container" style="margin-left: 35%; margin-top: -16%;">
+            <img src="images/customers.png" width="300px" alt="Customer images">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--About Us Starts Here-->
+  <div class="container about_us" style="margin-top: 8rem; margin-bottom: 8rem;">
+    <img src="images/about us.avif" class="img-fluid mt-5 mb-5" height="350px" alt="...">
+    <div class="text justify-content-end">
+      <h3 style="color: rgb(46, 46, 255); font-weight: 400;">About Us</h3>
+      <h1 style="color: black; font-weight: 800;">Gulf Reservoir Modelling Technology <span style="color: red;">ResMode
+          Tec</span></h1>
+      <p style="width: 78%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi consequuntur unde neque
+        officiis placeat,
+        voluptatum perferendis itaque temporibus aperiam ex. Ipsam fugiat quis iusto aperiam vitae eaque sit modi
+        officiis. Excepturi consequuntur unde neque officiis placeat, voluptatum perferendis itaque temporibus aperiam
+        ex. Ipsam fugiat quis iusto aperiam vitae eaque sit modi officiis.</p>
+    </div>
+    <!--About Us Buttons-->
+    <div class="btn-group" role="group"
+      style="margin-left: 50%; border: 1px solid; border-color:rgb(0, 67, 148); border-radius: 0;"
+      aria-label="Basic example">
+      <button type="button" class="btn btn-primary"
+        style="background-color: rgb(46, 46, 255); border-radius: 0; color: #f2f2f2; border: none;width: 180px;">Read
+        More</button>
+      <button type="button" class="btn btn-primary"
+        style=" border-radius: 0; background-color: white; color:rgb(46, 46, 255); border: none;width: 180px;">Call
+        Us</button>
+    </div>
+
+    <div class="container box"
+      style=" background-color: rgb(46, 46, 255); width: 200px; height: 50px; margin-top: -25%; margin-left: 33%; position: relative;color: rgb(243, 243, 243); text-align: center; align-content: center; justify-content: center; font-size: 30px; font-weight: 700;">
+      10+ Years<br>
+      <h3 style="color: black; font-weight: 500; font-size: 20px; text-align: left; padding-top: 5%;">Experience</h3>
+    </div>
+  </div>
+  <!--We Offer...-->
+  <div class="container" style="margin-top: 30%; text-align: center;">
+    <h3 class="col-12" style="color: rgb(46, 46, 255); font-weight: 400; font-size: 1.5rem;">What We Offer</h3>
+    <h1 class="col-12" style="color: black; font-weight: 800; font-size: 3rem;">Our Services</h1>
+  </div>
+  <div class="d-flex row align-items-center" style="margin-top: 3rem; margin-bottom: 8rem;">
+    <div class="container mb-2 col-12 col-md-4 col-sm-6"
+      style="background-color: rgb(25, 25, 150); width: 20rem; height: 19rem; border-radius: 0 3rem;"><span
+        class="badge rounded-pill "
+        style="box-shadow: 0 0 3px 1px black;margin-top: 2rem; margin-left: -3rem; width: 10rem; height: 3rem; background-color: black;font-size: 1.3rem;font-weight: 400;padding-top: 0.7rem; color: #f2f2f2;">Training</span>
+      <h3 style="margin-left: 1.5rem; margin-top: 1.2rem; color: white; font-size: 1.3rem;">Develop & Training</h3>
+      <p
+        style="margin-left: 1.5rem; margin-top: 1.2rem; color: rgb(235, 235, 235); font-weight: 300; font-size: 0.9rem; width: 85%;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum rerum voluptatem ipsum assumenda
+        reiciendis eaque provident sunt sint eius....
+        <br><span style="font-weight: 500;">read more <i class="fa-solid fa-angle-right"
+            style="font-size: 0.7rem;color: #ffffff;"></i><i class="fa-solid fa-angle-right"
+            style="color: #ffffff; font-size: 0.7rem;"></i></span>
+      </p>
+    </div>
+    <div class="container mb-2 col-12 col-md-4 col-sm-6"
+      style="background-color: rgb(46, 46, 255); width: 20rem; height: 19rem; border-radius: 0 3rem;"><span
+        class="badge rounded-pill "
+        style="box-shadow: 0 0 3px 1px black; margin-top: 2rem; margin-left: -3rem; width: 10rem; height: 3rem; background-color: black;font-size: 1.3rem;font-weight: 400;padding-top: 0.7rem; color: #f2f2f2;">Consulting</span>
+      <h3 style="margin-left: 1.5rem; margin-top: 1.2rem; color: white; font-size: 1.3rem;">Develop & Training</h3>
+      <p
+        style="margin-left: 1.5rem; margin-top: 1.2rem; color: rgb(235, 235, 235); font-weight: 300; font-size: 0.9rem; width: 85%;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum rerum voluptatem ipsum assumenda
+        reiciendis eaque provident sunt sint eius....
+        <br><span style="font-weight: 500;">read more <i class="fa-solid fa-angle-right"
+            style="font-size: 0.7rem;color: #ffffff;"></i><i class="fa-solid fa-angle-right"
+            style="color: #ffffff; font-size: 0.7rem;"></i></span>
+    </div>
+    <div class="container mb-2 col-12 col-md-4 col-sm-6"
+      style="background-color: rgb(35, 35, 208); width: 20rem; height: 19rem; border-radius: 0 3rem;"><span
+        class="badge rounded-pill "
+        style="box-shadow: 0 0 3px 1px black;margin-top: 2rem; margin-left: -3rem; width: 10rem; height: 3rem; background-color: black;font-size: 1.3rem;font-weight: 400;padding-top: 0.7rem; color: #f2f2f2;">Recruitment</span>
+      <h3 style="margin-left: 1.5rem; margin-top: 1.2rem; color: white; font-size: 1.3rem;">Develop & Training</h3>
+      <p
+        style="margin-left: 1.5rem; margin-top: 1.2rem; color: rgb(235, 235, 235); font-weight: 300; font-size: 0.9rem; width: 85%;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum rerum voluptatem ipsum assumenda
+        reiciendis eaque provident sunt sint eius....
+        <br><span style="font-weight: 500;">read more <i class="fa-solid fa-angle-right"
+            style="font-size: 0.7rem;color: #ffffff;"></i><i class="fa-solid fa-angle-right"
+            style="color: #ffffff; font-size: 0.7rem;"></i></span>
+    </div>
+  </div>
+  <!--Why Choose US Starts Here-->
+  <div class="container-fluid img-fluid mt-5 text-center choose-us-img"
+    style=" margin: 0; padding: 0; background-color: rgba(0, 55, 255, 0.9); background-repeat: no-repeat; width: 100vw; position: absolute;">
+
+    <div style="position: static; margin-top: 7rem; ">
+      <h3 style="  color: rgb(240, 240, 240); font-weight: 400;">Why Choose Us?</h3>
+      <h1 style="  color: rgb(255, 255, 255); font-weight: 700;">Our Core Values & Expertises</h1>
+      <!--Counter Section Starts Here-->
+      <div class="row" style="margin-top: 4rem;">
+        <div class="col-12 col-md-3 col-sm-6 text-center" style="color: white;">
+          <h1 style="font-weight: 700; font-size: 3.5rem;">31745+</h1>
+          <h5 style="font-weight: 400;">Participants</h5>
+        </div>
+        <div class="col-12 col-md-3 col-sm-6 text-center" style="color: white;">
+          <h1 style="font-weight: 700; font-size: 3.5rem;">852+</h1>
+          <h5 style="font-weight: 400;">Courses</h5>
+        </div>
+        <div class="col-12 col-md-3 col-sm-6 text-center" style="color: white;">
+          <h1 style="font-weight: 700; font-size: 3.5rem;">35+</h1>
+          <h5 style="font-weight: 400;">Training Venues</h5>
+        </div>
+        <div class="col-12 col-md-3 col-sm-6 text-center" style="color: white;">
+          <h1 style="font-weight: 700; font-size: 3.5rem;">5+</h1>
+          <h5 style="font-weight: 400;">Training Centers</h5>
+        </div>
+      </div>
+      <!--Counter Section Ends Here-->
+      <!--Group Buttons In Choose us-->
+      <div class="btn-group mt-5" role="group" aria-label="Basic example"
+        style=" border: 5px solid; border-color: rgba(122, 181, 253, 0.588); border-radius: 0; margin-top: 15px;">
+        <button type="button" class="btn btn-primary"
+          style="background-color: rgb(37, 102, 255); border-radius: 0; color: #f2f2f2; border: none;width: 180px;">Inquire
+          Us</button>
+        <button type="button" class="btn btn-primary"
+          style="background-color: rgb(20, 20, 20); border-radius: 0; color: white; border: none;width: 180px;">Contact
+          Us</button>
+      </div>
+    </div>
+  </div>
+
+  <!--What we offer section starts here-->
+  <div class="container col-12 col-md-6 col-sm-4 mt-5" style="margin-left: 7rem;">
+    <img src="images/what we offer.jpg" width="10rem" alt="" class="img-fluid"
+      style="width: 40rem; margin-left: -10rem; margin-top: 50rem; border-radius: 0rem 3rem 0;">
+    <img src="images/what we offer1.jpeg" width="50px" alt="" class="img-fluid"
+      style="width: 35rem; margin-left: -20rem; margin-top: 70rem; border-radius: 40px 40px 150px;">
+    <div class="text-center"
+      style=" background-color: rgb(46, 46, 255); width: 200px; height: 50px; margin-top: -32rem; margin-left: 32rem; position: relative;color: rgb(243, 243, 243); text-align: center; align-content: center; justify-content: center; font-size: 30px; font-weight: 700;">
+      Experties<br>
+      <h3 style="color: black; font-weight: 500; font-size: 20px; text-align: center; padding-top: 5%;">On Our Field
+      </h3>
+    </div>
+  </div>
+  <div class="text justify-content-end col-12 md-col-4" style="width: 35%; margin-left: 60%; margin-top: -8rem;">
+    <h3 style="color: rgb(46, 46, 255); font-weight: 450;">What We Offer</h3>
+    <h1 style="color: black; font-weight: 800;">Precision Placements <span style="color: red;">Profound Results</span>
+    </h1>
+    <p style="font-weight: 450; text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Excepturi consequuntur unde neque
+      officiis placeat,
+      voluptatum perferendis itaque temporibus aperiam ex. Ipsam fugiat quis iusto aperiam vitae eaque sit modi
+      officiis. Excepturi consequuntur unde neque officiis placeat, voluptatum perferendis itaque temporibus aperiam
+      ex. Ipsam fugiat quis iusto aperiam vitae eaque sit modi officiis.</p>
+  </div>
+  <!--Icon Section Starts-->
+  <div class=" justify-content-center" style="color: black; margin-top: 2%; margin-left: 60%;">
+    <i class="fa-solid fa-people-line" style="color:rgb(37, 102, 255); font-size: 3.5rem; "></i>
+    <h1 style="font-weight: 600; font-size: 1rem; margin-top: -8%; margin-left: 14%;"> Recruitment</h1>
+    <h5 style="font-size: 0.7rem; font-weight: 500; width: 30%;margin-top: -1%; margin-left: 14%; color: #373737;">
+      Lorem
+      ipsum dolor, sit amet consectetur adipisicing.</h5>
+  </div>
+  <div class=" justify-content-center" style="color: black; margin-top: -3.7%; margin-left: 78%; width: 39rem;">
+    <i class="fa-solid fa-chalkboard-user" style="color:rgb(37, 102, 255); font-size: 3.5rem; "></i>
+    <h1 style="font-weight: 600; font-size: 1rem; margin-top: -8%; margin-left: 14%;"> Training</h1>
+    <h5 style="font-size: 0.7rem; font-weight: 500; width: 30%;margin-top: -1%; margin-left: 14%; color: #373737;">
+      Lorem
+      ipsum dolor, sit amet consectetur adipisicing.</h5>
+  </div>
+
+  <div class=" justify-content-center" style="color: black; margin-top: 2%; margin-left: 60%;">
+    <i class="fa-solid fa-people-arrows" style="color:rgb(37, 102, 255); font-size: 3.5rem; "></i>
+    <h1 style="font-weight: 600; font-size: 1rem; margin-top: -8%; margin-left: 14%;"> Consulting</h1>
+    <h5 style="font-size: 0.7rem; font-weight: 500; width: 30%;margin-top: -1%; margin-left: 14%; color: #373737;">
+      Lorem
+      ipsum dolor, sit amet consectetur adipisicing.</h5>
+  </div>
+  <div class="justify-content-center" style="color: black;  margin-top: -3.7%; margin-left: 78%; width: 39rem;">
+    <i class="fa-solid fa-network-wired" style="color:rgb(37, 102, 255); font-size: 3.5rem; "></i>
+    <h1 style="font-weight: 600; font-size: 1rem; margin-top: -8%; margin-left: 14%;"> Outsourcing</h1>
+    <h5 style="font-size: 0.7rem; font-weight: 500; width: 30%;margin-top: -1%; margin-left: 14%; color: #373737;">Lorem
+      ipsum dolor, sit amet consectetur adipisicing.</h5>
+  </div>
+
+  <!--Icon Section Ends-->
+  <!--Group Buttons In What We Offer-->
+  <div class="btn-group mt-4" role="group" aria-label="Basic example"
+    style="height: 55px;border:1px solid; border-color:rgb(37, 102, 255); border-radius: 0; margin-left: 60%;">
+    <button type="button" class="btn btn-primary"
+      style="background-color: rgb(37, 102, 255);  border-radius: 0; color: #f2f2f2; border: none;width: 180px;">Read
+      More</button>
+    <button type="button" class="btn btn-primary"
+      style="background-color: rgb(255, 255, 255); border-radius: 0; color: rgb(0, 0, 0); border: none;width: 180px;">Inquire
+      Us</button>
+  </div>
+
+  <!--Write above-->
+  </div>
+  </div>
+  <!--Blog And Article Section Starts Here-->
+  <div class="container " style="margin-top: 20%;">
+    <h3 style="color: rgb(46, 46, 255); font-weight: 450;">Blogs & Articles</h3>
+    <h1 style="color: black; font-weight: 800; line-height: 1.5rem;">Read Our Latest <span style="color: red;">Blogs &
+        Articles</span>
+    </h1>
+    <!--Blog Images Block Starts Here-->
+    <div class="d-flex  row ms-0 mb-5 gap-5">
+      <div class="card card3 text-bg-dark col-12 col-md-4 col-sm-12"
+        style="border-radius: 0 3rem 0 3rem; margin-left: 0; margin-top: 3rem; border: none;  width: 25rem; height: 30rem;">
+        <span class="badge"
+          style="box-shadow: 0 0 3px 1px black;margin-top: 3rem; margin-left: -0.7rem; border-radius: 0 2rem 0 0; width: 15rem; height: 3rem; background-color: black;font-size: 1.3rem;font-weight: 400;padding-top: 0.7rem; color: #f2f2f2;">Candidate
+          Interview</span>
+        <div class="card-img-overlay" style="margin-top: 15rem; margin-left: 1.5rem;">
+          <h5 class="card-title" style="font-weight: 700;">The Power Of Networking</h5>
+          <p class="card-text" style="font-weight: 300;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            dolorum rerum voluptatem ipsum assumenda reiciendis eaque provident sunt sint eius....
+          </p>
+          <p class="card-text"><small><span style="font-weight: 500;">read more <i class="fa-solid fa-angle-right"
+                  style="font-size: 0.7rem;color: #ffffff;"></i><i class="fa-solid fa-angle-right"
+                  style="color: #ffffff; font-size: 0.7rem;"></i></span></small>
+          </p>
+        </div>
+      </div>
+      <div class="card card1 text-bg-dark col-12 col-md-4 col-sm-12"
+        style="border-radius: 0 3rem 0 3rem; margin-left: 0; margin-top: 3rem; border: none;  width: 25rem; height: 30rem;">
+        <span class="badge"
+          style="box-shadow: 0 0 3px 1px black;margin-top: 3rem; margin-left: -0.7rem; border-radius: 0 2rem 0 0; width: 15rem; height: 3rem; background-color: black;font-size: 1.3rem;font-weight: 400;padding-top: 0.7rem; color: #f2f2f2;">Candidate
+          Interview</span>
+        <div class="card-img-overlay" style="margin-top: 15rem; margin-left: 1.5rem;">
+          <h5 class="card-title" style="font-weight: 700;">The Power Of Networking</h5>
+          <p class="card-text" style="font-weight: 300;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            dolorum rerum voluptatem ipsum assumenda reiciendis eaque provident sunt sint eius....
+          </p>
+          <p class="card-text"><small><span style="font-weight: 500;">read more <i class="fa-solid fa-angle-right"
+                  style="font-size: 0.7rem;color: #ffffff;"></i><i class="fa-solid fa-angle-right"
+                  style="color: #ffffff; font-size: 0.7rem;"></i></span></small>
+          </p>
+        </div>
+      </div>
+      <div class="card card2 text-bg-dark col-12 col-md-4 col-sm-12"
+        style="border-radius: 0 3rem 0 3rem; margin-left: 0; margin-top: 3rem; border: none;  width: 25rem; height: 30rem;">
+        <span class="badge"
+          style="box-shadow: 0 0 3px 1px black;margin-top: 3rem; margin-left: -0.7rem; border-radius: 0 2rem 0 0; width: 15rem; height: 3rem; background-color: black;font-size: 1.3rem;font-weight: 400;padding-top: 0.7rem; color: #f2f2f2;">Candidate
+          Interview</span>
+        <div class="card-img-overlay" style="margin-top: 15rem; margin-left: 1.5rem;">
+          <h5 class="card-title" style="font-weight: 700;">The Power Of Networking</h5>
+          <p class="card-text" style="font-weight: 300;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            dolorum rerum voluptatem ipsum assumenda reiciendis eaque provident sunt sint eius....
+          </p>
+          <p class="card-text"><small><span style="font-weight: 500;">read more <i class="fa-solid fa-angle-right"
+                  style="font-size: 0.7rem;color: #ffffff;"></i><i class="fa-solid fa-angle-right"
+                  style="color: #ffffff; font-size: 0.7rem;"></i></span></small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Blog Images Block Ends Here-->
+  </div>
+  <!--Blog And Article Section Ends Here-->
+  <!--Client Testimonial Section Starts Here-->
+  <div class="container client-container text-center" style="margin-top: 10rem;">
+    <h4>Testimonial</h4>
+    <h2>Client Feedback</h2>
+    <h1><i class="fa-solid fa-quote-left"></i></h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis repudiandae ipsum sint aliquid fugit earum
+      voluptatum! Voluptates labore natus debitis, quia veritatis, animi rem omnis consectetur, alias explicabo vel
+      voluptate ullam! Assumenda delectus sit magni ullam consectetur blanditiis necessitatibus fuga, similique error.
+      Temporibus, omnis expedita, doloribus quaerat soluta quae reiciendis architecto minus accusamus eveniet illo
+      debitis?</p>
+    <img src="images/client testimonial1.webp" width="80rem" class="img-fluid mt-5" alt="">
+    <div class="testimonial-text">
+      <h3>John Doe</h3>
+      <p>Marketing Coordinator</p>
+    </div>
+    <div class="d-flex justify-content-between" style="margin-top: -36rem;">
+      <img src="images/client testimonial2.webp" width="70rem" class="img-fluid" alt="">
+      <img src="images/client testimonial3" width="70rem" class="img-fluid" alt="">
+    </div>
+    <div class="d-flex justify-content-between" style="margin-top: 10rem; width: 85%; margin-left: 7%;">
+      <img src="images/client testimonial1.webp" width="70rem" class="img-fluid" alt="">
+      <img src="images/client testimonia7" width="70rem" class="img-fluid" alt="">
+    </div>
+    <div class="d-flex justify-content-between" style="margin-top: 10rem;">
+      <img src="images/client testimonial5" width="70rem" class="img-fluid" alt="">
+      <img src="images/client testimonial6" width="70rem" class="img-fluid" alt="">
+    </div>
+  </div>
+  <!--Client Testimonial Section Ends Here-->
+  <!--Footer Starts Here-->
+  <footer>
+    <div class="container-fluid footer d-flex row">
+      <div class="d-flex about flex-column col-12 col-md-2 col-sm-6">
+        <h2>About Us</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint magnam quae odit quisquam fuga.</p>
+        <h3><i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-square-instagram"></i><i
+            class="fa-brands fa-square-twitter"></i><i class="fa-brands fa-linkedin"></i></h3>
+      </div>
+      <div class="d-flex useful flex-column col-12 col-md-2 col-sm-6">
+        <h2>Useful Links</h2>
+        <h5><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> About Us</a></h5>
+        <h5><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Job List</a></h5>
+        <h5><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> FAQs</a></h5>
+        <h5><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Team</a></h5>
+        <h5><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Contact Us</a></h5>
+      </div>
+      <div class="d-flex useful flex-column col-12 col-md-2 col-sm-6">
+        <h2>What We Do</h2>
+        <h5><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Recruitment</a></h5>
+        <h5><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> HR Outsourcing</a></h5>
+        <h5><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Expatriate Services</a></h5>
+        <h5><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Executive Search</a></h5>
+      </div>
+      <div class="d-flex subscribe flex-column col-12 col-md-2 col-sm-6">
+        <h2>Subscribe & Get Update Repeatedly</h2>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Your Email" aria-label="Search">
+          <i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center copyright">
+      <h2>Copyright &copy; 2024 | Designed By Daud Ali</h2>
+    </div>
+  </footer>
+  <!--Footer Ends Here-->
+  <!--Script Here-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+  <!--Script Here-->
+</body>
+
+</html>
