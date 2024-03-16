@@ -1,252 +1,299 @@
-html{
-  scroll-padding-top: 100px;
-}
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #f5f5f5;
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-    background-color: #f5f5f5;
-    display: none;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-image: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      color-stop(0.44, rgb(122, 153, 217)),
-      color-stop(0.72, rgb(73, 125, 189)),
-      color-stop(0.86, rgb(28, 58, 148))
-    );
-  }
+  font-family: "prompt";
+  position: relative;
+}
+/* Hide vertical scrollbar in Chrome, Safari, and Opera */
+body::-webkit-scrollbar {
+  display: n;
 }
 
-.background {
+.main-bg {
+  background-color: rgb(124, 0, 169);
+  padding: 0;
+  margin: 0;
   width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+  height: 95vh;
+  color: white;
+  position: relative;
+}
+/*Navbar CSS*/
+.nav-link {
+  color: #d8d8d8;
+}
+.nav-link:hover {
+  color: #026bff;
+}
+.activee {
+  color: white;
+}
+.navbar-brand {
+  color: white;
+}
+/*Navbar CSS*/
+
+/*Hero SEction CSS*/
+.hero-section {
+  margin-top: 7%;
+  /*display: grid;
+  place-content: center;
+  height: inherit;*/
+}
+.hero-img {
+  margin-top: -3rem;
+}
+.hero-text {
+  max-width: 90%;
+}
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.hero-text p {
+  font-weight: 200;
+  line-height: 1.3rem;
+}
+.main-btn {
+  border-radius: 0;
+  width: 10rem;
+}
+.hero-img {
+  height: auto;
+  width: 25rem;
+  margin-left: 5rem;
+}
+/*Hero SEction CSS*/
+
+/* Shape Divider CSS*/
+.custom-shape-divider-bottom-1709488653 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1709488653 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 124px;
+}
+
+.custom-shape-divider-bottom-1709488653 .shape-fill {
+  fill: #ffffff;
+}
+/* Shape Divider CSS*/
+
+/* Services Section CSS*/
+.service-section {
+  margin-top: 7rem;
+}
+.service-section hr {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.service-section h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(19, 19, 19);
+  line-height: 4rem;
+}
+.card-box {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: rgb(255, 255, 255);
+  width: 330px;
+  height: auto;
+  box-shadow: 0px 0px 40px -20px rgb(124, 0, 169);
+}
+.card-box img {
+  width: 120px;
+}
+.card-box h3 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: black;
+}
+.card-box p {
+  font-weight: 300;
+  text-align: justify;
+  color: rgb(29, 29, 29);
+}
+.cards {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+/* Services Section CSS*/
+
+/*Products Section CSS*/
+
+.products-section {
+  position: relative;
   background-image: linear-gradient(
       to right,
-      rgba(21, 22, 43, 0.878),
-      #1a1d4482
+      rgba(124, 0, 169, 0.922),
+      rgba(124, 0, 169, 0.851)
     ),
-    url(images/Virtual-Classroom_Lobby.png);
+    url(images/product\ section\ cover\ img.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-}
-
-.main_text {
-  color: white;
-  padding-top: 100px;
-}
-.main_text h4 {
-  font-weight: 400;
-}
-.main_text p {
-  font-weight: 300;
-  width: 70%;
-  text-align: justify;
-}
-.main_text h3 {
-  width: 70%;
-  font-weight: 780;
-  font-size: 5rem;
-}
-.card {
-  margin-left: 40%;
-  margin-top: -5%;
-  width: 500px;
-}
-.btn-group {
-  width: 330px;
-  height: 50px;
-}
-.about_us img {
-  border-radius: 40px 40px 200px;
-  box-shadow: 0px 0px 10px 0.1px;
-}
-.about_us .text {
-  margin-left: 50%;
-  margin-top: -33%;
-}
-
-.choose-us-img {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 76, 255, 0.964),
-      #1472ff60
-    ),
-    url(images/choose\ us.jpg);
-  background-size: cover;
   background-attachment: fixed;
-  width: auto;
-  height: 80vh;
-}
-
-.card3 {
-  background: linear-gradient(rgba(222, 222, 255, 0.264), rgb(0, 30, 164)),
-    url(images/blogImage2.jpeg);
-  background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 5rem;
+  width: 100vw;
+  height: 70vh;
 }
+.product-text-img {
+  padding-top: 5%;
+}
+.product-text {
+  width: 80%;
+}
+.product-text h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.product-text p {
+  color: white;
+  font-weight: 200;
+}
+/*Products Section CSS*/
 
-.card1 {
-  background: linear-gradient(rgba(222, 222, 255, 0.016), rgb(0, 30, 164)),
-    url(images/blogImage1);
-  background-repeat: no-repeat;
-  background-size: cover;
+/*Online Products Section CSS*/
+.online-products {
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
-
-.card2 {
-  background: linear-gradient(rgba(222, 222, 255, 0.042), rgb(0, 30, 164)),
-    url(images/blogImage3);
-  background-repeat: no-repeat;
-  background-size: cover;
+.online-products hr {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.client-container h4 {
-  color: rgb(0, 94, 255);
-  font-size: 2rem;
-}
-.client-container h2 {
-  font-weight: 800;
+.online-products h1 {
   font-size: 3rem;
-  color: black;
-}
-.client-container h1 {
-  color: rgb(0, 60, 255);
-  opacity: 0.4;
-  font-size: 6rem;
-}
-.client-container p{
- font-weight: 500;
- width: 55%;
- margin-left: 23%;
-}
-.testimonial-text h3{
-  color: black;
-  font-weight: 750;
-}
-.testimonial-text p{
-  color: rgb(27, 27, 27);
-  font-size: 0.9rem;
-  line-height: 0.5rem;
-  margin-left: 22.5%;
-}
-.footer{
-  background-color: rgb(0, 47, 141);
-  width: 100.8vw;
-  margin-top: 10rem;
-  color: white;
-}
-.about{
-  padding-top: 5rem;
-  margin-left: 5rem;
-}
-.about h2{
   font-weight: 600;
-  margin-left: 1rem;
-  font-size: 1.9rem;
-  line-height: 3rem;
+  color: rgb(19, 19, 19);
+  line-height: 4rem;
 }
-.about p{
+.online-products .card-box {
+  width: 40rem;
+}
+.online-products .card-box {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.online-products p {
   font-size: 0.8rem;
-  width: 70%;
-  font-weight: 450;
-  color: rgb(213, 213, 213);
 }
-.about i{
+/*Online Products Section CSS*/
+
+/*Clients Review section CSS*/
+.clients-review {
+  margin: 0 0 10rem 0;
+  padding: 0;
+  width: 100vw;
+  height: 90vh;
+  background-color: rgb(0, 0, 0);
+}
+.clients-review h1 {
+  padding-top: 5%;
+  font-size: 2.5rem;
+  font-weight: 600;
   color: rgb(255, 255, 255);
-  font-size: 2rem;
-  line-height: 3rem;
-  margin-right: 1rem;
-}
-
-.useful h5 a{
-  color: white;
-  text-decoration: none;
-  font-weight: 450;
-  font-size: 0.9rem;
-}
-
-.useful h2{
-  font-weight: 600;
-  font-size: 1.9rem;
   line-height: 3rem;
 }
-.useful i{
-  font-size: 1rem;
-  margin-right: 0.3rem;
-}
-.useful{
-  padding-top: 5rem;
-  margin-left: 5rem;
-}
-
-.subscribe h5 a{
+.clients-review hr {
   color: white;
-  text-decoration: none;
-  font-weight: 450;
-  font-size: 0.9rem;
 }
-
-.subscribe h2{
-  font-weight: 600;
-  font-size: 1.9rem;
-  line-height: 2.5rem;
-  width: 30rem;
+.clients-review .carousel .carousel-indicators {
+  bottom: -13%;
 }
-.subscribe i{
-  font-size: 1rem;
-  margin-right: 0.3rem;
+.carousel .carousel-indicators button {
+  width: 0.7rem;
+  height: 0.7rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: rgb(124, 0, 169);
 }
-.subscribe{
-  padding-top: 5rem;
-  margin-left: 5rem;
-}
-.subscribe input{
-  border-radius: 0;
-  margin-top: 5%;
+.clients-review .card {
+  background-color: rgb(24, 24, 24);
+  color: white;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
+  height: 22rem;
   width: 15rem;
+  border-radius: 0;
 }
-.subscribe ::placeholder{
-  color: rgba(60, 60, 60, 0.523);
-}
-.subscribe i{
-  font-size: 2rem;
-  margin-top: 5%;
-}
-
-.subscribe i:hover{
-  cursor: pointer;
-}
-.copyright {
-  color: white;
-  background-color: rgb(0, 15, 57);
-  height: 3rem;
-}
-.copyright h2{
+.clients-review .card h5 {
   font-size: 1rem;
-  font-weight: 300;
-  padding-top: 1rem;
+}
+.clients-review .card p {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+.clients-review .card img {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 200px;
+  border-radius: 0;
+}
+.clients-review .card i {
+  font-size: 0.8rem;
+  color: rgb(251, 255, 0);
+  padding-bottom: 1rem;
+}
+/*Clients Review section CSS*/
 
+@media screen and (max-width: 968px) {
+  .main-bg {
+    height: 100vh;
+  }
+  .hero-img {
+    display: none;
+  }
+  .products-section {
+    height: 100vh;
+  }
+  .product-text h1 {
+    font-size: 2rem;
+  }
+  .product-text p {
+    font-size: 0.9rem;
+  }
+  .products-section img {
+    width: 20rem;
+  }
+  .product-text-img {
+    padding-top: 0;
+  }
+  .online-products h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .clients-review {
+    height: auto;
+    position: relative;
+  }
+  .clients-review .card {
+    margin-bottom: 5%;
+  }
+  .clients-review .carousel .carousel-indicators {
+    bottom: -1%;
+  }
+  .clients-review h1 {
+    font-size: 2rem;
+  }
 }
 
-#back-to-top{
-  position: fixed;
-  z-index: 999;
-  bottom: 10px;
-  right: 10px;
+@media screen and (max-width: 1280px) {
+  .product-text h1 {
+    font-size: 2.5rem;
+  }
 }
