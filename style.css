@@ -5,38 +5,54 @@
   font-family: "prompt";
   position: relative;
 }
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 6;
+}
 /* Hide vertical scrollbar in Chrome, Safari, and Opera */
 body::-webkit-scrollbar {
-  display: n;
+  display: none;
 }
 
 .main-bg {
   background-color: rgb(124, 0, 169);
   padding: 0;
+  padding-top: 1rem;
   margin: 0;
   width: 100vw;
   height: 95vh;
   color: white;
-  position: relative;
 }
 /*Navbar CSS*/
-.nav-link {
-  color: #d8d8d8;
+.navbar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0px 20px -10px black;
+  color: rgb(255, 255, 255);
+  width: 90vw;
+  margin: auto;
+  border-radius: 0.5rem;
+  z-index: 5;
 }
+
 .nav-link:hover {
-  color: #026bff;
+  color: #0077ff;
 }
 .activee {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .navbar-brand {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 /*Navbar CSS*/
 
 /*Hero SEction CSS*/
 .hero-section {
-  margin-top: 7%;
+  margin-top: 12%;
   /*display: grid;
   place-content: center;
   height: inherit;*/
@@ -46,11 +62,35 @@ body::-webkit-scrollbar {
 }
 .hero-text {
   max-width: 90%;
+  animation: mainH1Animate 1s;
+  animation-direction: linear;
+  /*transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;*/
 }
 .hero-text h1 {
   font-size: 3.5rem;
   font-weight: 600;
 }
+@keyframes mainH1Animate {
+  10% {
+    margin-left: -50px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .hero-text p {
   font-weight: 200;
   line-height: 1.3rem;
@@ -90,6 +130,25 @@ body::-webkit-scrollbar {
 /* Shape Divider CSS*/
 
 /* Services Section CSS*/
+.service-cards {
+  animation-name: CardAnimate;
+  animation-duration: 2s;
+}
+@keyframes CardAnimate {
+  0% {
+    opacity: 0;
+    margin-bottom: -30rem;
+  }
+  30% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.9;
+  }
+}
 .service-section {
   margin-top: 7rem;
 }
@@ -154,6 +213,22 @@ body::-webkit-scrollbar {
 }
 .product-text {
   width: 80%;
+  animation: ProductTextAnimate 1s;
+  animation-timing-function: ease-in;
+}
+@keyframes ProductTextAnimate {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .product-text h1 {
   color: white;
@@ -371,7 +446,7 @@ footer a:hover {
 
 /* Footer Section CSS*/
 
-.navbar-toggler{
+.navbar-toggler {
   border: none;
 }
 
@@ -382,7 +457,7 @@ footer a:hover {
   .hero-img {
     display: none;
   }
-  .hero-text{
+  .hero-text {
     margin: auto;
   }
   .products-section {

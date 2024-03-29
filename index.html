@@ -19,7 +19,7 @@
 <body>
     <div class="main-bg">
         <!--Navbar Starts Here-->
-        <nav class="navbar navbar-expand-lg bg-transparent pt-5">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Your Site</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -33,16 +33,16 @@
                             <a class="nav-link activee" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contatc Us</a>
+                            <a class="nav-link" href="#contact">Contatc Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sign Up</a>
+                            <a class="nav-link" href="#signup">Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -92,11 +92,14 @@
 
     <!--Services Section Start Here-->
     <section class="service-section">
+        <a id="back-to-top" href="#" class="btn btn-primary btn-floating back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
         <div class="container col-12 text-center">
             <h1>What We Will <br> Do For Your Business</h1>
             <hr class="w-25">
         </div>
-        <div class="container cards">
+        <div class="container cards service-cards">
             <div class="row g-5">
                 <div class="col-12 col-lg-4 col-md-12">
                     <div class="text-center card-box rounded-4 p-5 mx-auto">
@@ -169,7 +172,7 @@
     <!--Products Section End Here-->
 
     <!--Online Products Section Start Here-->
-    <div class="container online-products">
+    <div class="container online-products" id="services">
         <div class="container col-12 text-center">
             <h1>Generating New Customers Via<br>Online Mode</h1>
             <hr class="w-25">
@@ -605,7 +608,7 @@
             </svg>
         </div>
         <!--Shape Divider Ends Here-->
-        <div class="container col-12 text-center">
+        <div class="container col-12 text-center" id="contact">
             <h1>Contact Us</h1>
             <hr class="w-25 mx-auto ">
         </div>
@@ -640,7 +643,7 @@
     <!--Contact US Ends Here-->
 
     <!--Footer Section STrats HEre-->
-    <section class="footer-section">
+    <section class="footer-section" id="about">
         <div class="container-fluid before-footer">
             <div class="row items">
                 <div class="col-12 col-lg-6 col-md-6">
